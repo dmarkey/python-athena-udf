@@ -59,13 +59,14 @@ See other examples in the [examples](examples) folder of this repo.
 
 Each lambda instance will take multiple requests for the same query. Each request can contain multiple rows, `athena-udf` handles this for you and your implementation will receive a single row.
 
-Athena will group your data into around 1MB chunks in a single request. The maximum your function can return in 6MB per chunk. 
+Athena will group your data into around 1MB chunks in a single request. The maximum your function can return is 6MB per chunk.
 
 This library uses `PyArrow`. This is a large library so the Lambdas will be around 50MB zipped.
 
 Timestamps seem to be truncated into Python `date` objects missing the time. 
 
 Functions can return one value only. To return more complex data structures consider returning a JSON payload and parsing on athena.
+
 ## Development
 
 To contribute to this library, first checkout the code. Then create a new virtual environment:
