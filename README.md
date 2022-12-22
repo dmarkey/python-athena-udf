@@ -4,7 +4,7 @@
 [![Changelog](https://img.shields.io/github/v/release/dmarkey/python-athena-udf?include_prereleases&label=changelog)](https://github.com/dmarkey/athena-udf/releases)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/dmarkey/python-athena-udf/blob/main/LICENSE)
 
-Athena User Defined Functions(UDFs) made easy!
+Athena User Defined Functions(UDFs) in Python made easy!
 
 This library implements the Athena UDF protocol in Python so you don't have to use Java and you can use any Python library you wish including numpy/pandas!
 
