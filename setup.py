@@ -1,8 +1,6 @@
 from setuptools import setup
 import os
 
-VERSION = "0.1"
-
 
 def get_long_description():
     with open(
@@ -18,16 +16,17 @@ setup(
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="David Markey",
-    url="https://github.com/dmarkey/athena-udf",
+    url="https://github.com/dmarkey/python-athena-udf",
     project_urls={
-        "Issues": "https://github.com/dmarkey/athena-udf/issues",
-        "CI": "https://github.com/dmarkey/athena-udf/actions",
-        "Changelog": "https://github.com/dmarkey/athena-udf/releases",
+        "Issues": "https://github.com/dmarkey/python-athena-udf/issues",
+        "CI": "https://github.com/dmarkey/python-athena-udf/actions",
+        "Changelog": "https://github.com/dmarkey/python-athena-udf/releases",
     },
     license="Apache License, Version 2.0",
-    version=VERSION,
     packages=["athena_udf"],
     install_requires=["pyarrow>10.0.0"],
     extras_require={"test": ["pytest"]},
     python_requires=">=3.7",
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
 )
