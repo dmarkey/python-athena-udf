@@ -43,7 +43,7 @@ This very basic example takes a `varchar` input, and returns the lowercase versi
 
 `arguments` contains a list of arguments given to the function. Can be more than 1 with different types.
 
-If you package the above into a zip, with dependencies and name your lambda function `my-kambda` you can then run it from the athena console like so:
+If you package the above into a zip, with dependencies and name your lambda function `my-lambda` you can then run it from the athena console like so:
 
 ```sql
 USING EXTERNAL FUNCTION my_udf(col1 varchar) RETURNS varchar LAMBDA 'athena-test'
