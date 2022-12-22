@@ -37,9 +37,11 @@ This very basic example takes a `varchar` input, and returns the lowercase versi
 
 `varchar` is converted to a python string on the way in and way out.
 
-The `input_schema` contains a `PyArrow` schema representing the schema of the data being passwd
-The `output_schema` contains a `PyArrow` schema representing the schema of what athena expects to be returned.
-The `arguments` contains a list of arguments given to the function. Can be more than 1 with different types.
+`input_schema` contains a `PyArrow` schema representing the schema of the data being passed
+
+`output_schema` contains a `PyArrow` schema representing the schema of what athena expects to be returned.
+
+`arguments` contains a list of arguments given to the function. Can be more than 1 with different types.
 
 If you package the above into a zip, with dependencies and name your lambda function `my-kambda` you can then run it from the athena console like so:
 
