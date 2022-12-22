@@ -16,7 +16,7 @@ Install this library using `pip`:
 
 ## Usage
 
-Simply install the package, create a lambda handler Python file, subclass `AthendUDFBase` and implement the `handle_athena_record` static method with your required functionality like this:
+Simply install the package, create a lambda handler Python file, subclass `BaseAthenaUDF` and implement the `handle_athena_record` static method with your required functionality like this:
 
 ```
 import athena_udf
